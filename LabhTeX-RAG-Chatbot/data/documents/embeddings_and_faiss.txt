@@ -1,0 +1,21 @@
+Sentence Transformers and FAISS
+
+Sentence Transformers generates dense vector representations
+of sentences and paragraphs using pretrained transformer models.
+
+The all-MiniLM-L6-v2 model generates 384-dimensional embeddings.
+Embeddings can be normalized before similarity search.
+
+Cosine similarity measures the similarity between two vectors.
+For L2-normalized vectors, inner product equals cosine similarity.
+
+FAISS IndexFlatIP performs exact inner-product similarity search.
+With normalized embeddings, it performs exact cosine similarity search.
+
+Each document chunk can contain metadata such as source filename,
+page number and chunk identifier.
+
+FAISS stores vectors, while the application separately stores
+document metadata in JSON.
+
+The index can be saved to disk and loaded for future searches.

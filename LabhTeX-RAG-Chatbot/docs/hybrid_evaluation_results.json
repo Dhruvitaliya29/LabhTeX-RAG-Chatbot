@@ -1,0 +1,608 @@
+[
+  {
+    "id": "Q1",
+    "question": "What is Retrieval Augmented Generation?",
+    "category": "Direct",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt",
+      "rag_evaluation.txt",
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt"
+    ],
+    "semantic_scores": [
+      0.524,
+      0.3059,
+      0.3509,
+      0.3183,
+      0.2659
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.031754,
+      0.016129,
+      0.015873,
+      0.015385
+    ],
+    "answer": "Retrieval‑Augmented Generation (RAG) is a method that combines information retrieval with language‑model generation. It lets a large language model (LLM) access external knowledge—such as documents, manuals, or research papers—before producing an answer, thereby grounding the response in real data rather than relying solely on the model’s internal knowledge. [Source 1] [Source 4]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.5240304470062256
+      },
+      {
+        "citation": 2,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_1",
+        "score": 0.3058769404888153
+      },
+      {
+        "citation": 3,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.3509410619735718
+      },
+      {
+        "citation": 4,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.3183284401893616
+      },
+      {
+        "citation": 5,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.26585906744003296
+      }
+    ],
+    "latency_seconds": 0.67
+  },
+  {
+    "id": "Q2",
+    "question": "What are the main applications of RAG?",
+    "category": "Direct",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_evaluation.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt",
+      "embeddings_and_faiss.txt",
+      "embeddings_and_faiss.txt"
+    ],
+    "semantic_scores": [
+      0.3584,
+      0.3667,
+      0.1276,
+      0.1343,
+      0.1152
+    ],
+    "hybrid_scores": [
+      0.032522,
+      0.032522,
+      0.031498,
+      0.031025,
+      0.030777
+    ],
+    "answer": "The main applications of Retrieval‑Augmented Generation (RAG) are to answer questions that require up‑to‑date or domain‑specific knowledge, such as:\n\n* questions drawn from **private documents**  \n* queries about **technical manuals**  \n* inquiries into **research papers**  \n* information that is **frequently updated** and may not be fully captured by a static language model  \n\nThese use cases are highlighted in the RAG fundamentals description【Source 2】.",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.3584368824958801
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.3666743040084839
+      },
+      {
+        "citation": 3,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_1",
+        "score": 0.12758749723434448
+      },
+      {
+        "citation": 4,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.13430804014205933
+      },
+      {
+        "citation": 5,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.11522121727466583
+      }
+    ],
+    "latency_seconds": 1.33
+  },
+  {
+    "id": "Q3",
+    "question": "What happens during document ingestion?",
+    "category": "Direct",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt"
+    ],
+    "semantic_scores": [
+      0.3552,
+      0.2618,
+      0.2169,
+      0.1538,
+      0.2095
+    ],
+    "hybrid_scores": [
+      0.032522,
+      0.032522,
+      0.031498,
+      0.031258,
+      0.03101
+    ],
+    "answer": "During document ingestion the system:\n\n1. **Extracts the raw text** from source files such as PDFs and TXT files.  \n2. **Cleans the extracted text** to remove noise or formatting artifacts.  \n3. **Divides the cleaned text into smaller chunks** (e.g., sentences or paragraphs) so that each chunk can be indexed and retrieved separately.  \n4. **Attaches metadata to each chunk**—such as the source filename, page number, and a chunk identifier—so that the original context can be referenced later.  \n\nThese steps prepare the content for embedding generation and efficient retrieval in the RAG pipeline.  \n\n[Source 2]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.3551745116710663
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.2618289589881897
+      },
+      {
+        "citation": 3,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.2169315218925476
+      },
+      {
+        "citation": 4,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.1538449227809906
+      },
+      {
+        "citation": 5,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.20947059988975525
+      }
+    ],
+    "latency_seconds": 0.48
+  },
+  {
+    "id": "Q4",
+    "question": "What are embeddings and how do they help retrieval?",
+    "category": "Direct",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_fundamentals.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt",
+      "embeddings_and_faiss.txt",
+      "embeddings_and_faiss.txt"
+    ],
+    "semantic_scores": [
+      0.5382,
+      0.5018,
+      0.3152,
+      0.4767,
+      0.3622
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.032258,
+      0.031258,
+      0.031025,
+      0.03101
+    ],
+    "answer": "Embeddings are numerical vector representations of text that capture its semantic meaning. They allow a system to compare the meaning of different pieces of text by measuring similarity between their vectors. In a Retrieval‑Augmented Generation (RAG) pipeline, the embeddings of document chunks are stored in a vector database (e.g., FAISS). When a user’s question is turned into an embedding, the system performs a similarity search against the stored embeddings to retrieve the most relevant chunks, which are then fed to the language model for answer generation. This process makes retrieval efficient and semantically grounded. [Source 1] [Source 4]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.538183331489563
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.5017845034599304
+      },
+      {
+        "citation": 3,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.315210223197937
+      },
+      {
+        "citation": 4,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.47670745849609375
+      },
+      {
+        "citation": 5,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.36216431856155396
+      }
+    ],
+    "latency_seconds": 6.27
+  },
+  {
+    "id": "Q5",
+    "question": "How does cosine similarity work with FAISS?",
+    "category": "Direct",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt"
+    ],
+    "semantic_scores": [
+      0.4656,
+      0.4118,
+      0.2909,
+      0.1204,
+      0.0983
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.016129,
+      0.015873,
+      0.015625,
+      0.015385
+    ],
+    "answer": "Cosine similarity in a FAISS‑based system is handled by normalizing the sentence embeddings to unit length (L2‑normalization). Once the vectors are normalized, the dot product (inner product) between two vectors equals their cosine similarity. FAISS provides an `IndexFlatIP` index that performs exact inner‑product similarity search; when the embeddings fed into this index are L2‑normalized, the search effectively returns results ranked by exact cosine similarity. This allows the system to retrieve the most semantically similar document chunks based on cosine similarity scores. [Source 1]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.4655642509460449
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.4117996096611023
+      },
+      {
+        "citation": 3,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.29093918204307556
+      },
+      {
+        "citation": 4,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.12042496353387833
+      },
+      {
+        "citation": 5,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.09833551943302155
+      }
+    ],
+    "latency_seconds": 6.09
+  },
+  {
+    "id": "Q6",
+    "question": "Why does normalized inner product represent cosine similarity in FAISS?",
+    "category": "Combined",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt"
+    ],
+    "semantic_scores": [
+      0.4305,
+      0.2725,
+      0.1869,
+      0.1096,
+      -0.0303
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.016129,
+      0.015873,
+      0.015625,
+      0.015385
+    ],
+    "answer": "In FAISS, the `IndexFlatIP` index performs exact inner‑product (dot‑product) similarity search. When the vectors that are stored in the index are **L2‑normalized** (i.e., each vector has unit length), the dot product between any two vectors becomes equal to their cosine similarity. Therefore, using a normalized inner product in FAISS is equivalent to performing an exact cosine similarity search.  \n\n[Source 1]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.43050557374954224
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.2725464105606079
+      },
+      {
+        "citation": 3,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.18688175082206726
+      },
+      {
+        "citation": 4,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.10964059084653854
+      },
+      {
+        "citation": 5,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": -0.030339840799570084
+      }
+    ],
+    "latency_seconds": 8.7
+  },
+  {
+    "id": "Q7",
+    "question": "Explain the complete process from a user question to an LLM-generated answer.",
+    "category": "Combined",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_evaluation.txt",
+      "rag_fundamentals.txt",
+      "rag_fundamentals.txt",
+      "rag_evaluation.txt",
+      "embeddings_and_faiss.txt"
+    ],
+    "semantic_scores": [
+      0.362,
+      0.2869,
+      0.3046,
+      0.196,
+      0.1147
+    ],
+    "hybrid_scores": [
+      0.032522,
+      0.032266,
+      0.032002,
+      0.03101,
+      0.030777
+    ],
+    "answer": "**Process from a user question to an LLM‑generated answer**\n\n1. **User submits a question**  \n   The system receives the user’s query.\n\n2. **Question embedding**  \n   The question is converted into a numerical vector (embedding) that captures its semantic meaning.  \n   [Source 2]\n\n3. **Retrieval of relevant document chunks**  \n   * The system searches a vector database (e.g., FAISS) for document chunks whose embeddings are most similar to the question embedding.  \n   * Each chunk may carry metadata such as source filename, page number, and chunk identifier, which is stored separately in JSON.  \n   * The retrieved chunks are passed to the next stage.  \n   [Source 2] [Source 5]\n\n4. **LLM generation using retrieved context**  \n   * The language model receives the retrieved chunks as context and generates an answer that incorporates that information.  \n   * If the retrieved context does not contain sufficient evidence to answer the question, the chatbot should acknowledge the missing information instead of inventing an answer.  \n   [Source 2]\n\n5. **Output**  \n   The generated answer is returned to the user, optionally with citations to the supporting chunks.  \n\nThis sequence—embedding the question, retrieving relevant chunks from a vector database, and generating an answer with an LLM—constitutes the core workflow of a Retrieval‑Augmented Generation (RAG) system.  \n[Source 3]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.3620404899120331
+      },
+      {
+        "citation": 2,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.2869313061237335
+      },
+      {
+        "citation": 3,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.3045845627784729
+      },
+      {
+        "citation": 4,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_1",
+        "score": 0.19597820937633514
+      },
+      {
+        "citation": 5,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.11474689096212387
+      }
+    ],
+    "latency_seconds": 9.39
+  },
+  {
+    "id": "Q8",
+    "question": "Which metrics evaluate a RAG system, and what does faithfulness measure?",
+    "category": "Combined",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_evaluation.txt",
+      "rag_evaluation.txt",
+      "rag_fundamentals.txt",
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt"
+    ],
+    "semantic_scores": [
+      0.4715,
+      0.1677,
+      0.2466,
+      0.0898,
+      0.0958
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.032002,
+      0.032002,
+      0.03101,
+      0.03101
+    ],
+    "answer": "**Metrics used to evaluate a RAG system**  \n- Retrieval recall at K – whether relevant chunks appear among the top K retrieved results.  \n- Precision at K – the proportion of retrieved chunks that are relevant.  \n- Answer correctness – whether the generated response accurately answers the user’s question.  \n- Faithfulness – whether the answer is supported by the retrieved document context.  \n- Citation accuracy – whether displayed sources actually support the generated claims.  \n- Unsupported questions – inclusion of questions that cannot be answered.  \n- Response latency – time taken to produce a response.  \n- Embedding generation time – time taken to convert text into embeddings.  \n- Retrieval time – time taken to search the vector database.  \n\n**What faithfulness measures**  \nFaithfulness measures whether the answer is supported by the retrieved document context. [Source 1]",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.4715462327003479
+      },
+      {
+        "citation": 2,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_1",
+        "score": 0.16765490174293518
+      },
+      {
+        "citation": 3,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_0",
+        "score": 0.24664127826690674
+      },
+      {
+        "citation": 4,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.0898434966802597
+      },
+      {
+        "citation": 5,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.09580931067466736
+      }
+    ],
+    "latency_seconds": 9.15
+  },
+  {
+    "id": "Q9",
+    "question": "What is the population of Mars?",
+    "category": "Unsupported",
+    "retrieved_chunks": 0,
+    "retrieved_sources": [],
+    "semantic_scores": [],
+    "hybrid_scores": [],
+    "answer": "I could not find sufficient information in the provided documents to answer this question.",
+    "sources": [],
+    "latency_seconds": 0.01
+  },
+  {
+    "id": "Q10",
+    "question": "Who developed the FAISS library and in which year?",
+    "category": "Unsupported",
+    "retrieved_chunks": 5,
+    "retrieved_sources": [
+      "rag_fundamentals.txt",
+      "embeddings_and_faiss.txt",
+      "embeddings_and_faiss.txt",
+      "rag_evaluation.txt",
+      "rag_evaluation.txt"
+    ],
+    "semantic_scores": [
+      0.3682,
+      0.3563,
+      0.1633,
+      -0.0237,
+      0.03
+    ],
+    "hybrid_scores": [
+      0.032787,
+      0.032002,
+      0.031498,
+      0.031281,
+      0.030777
+    ],
+    "answer": "I’m sorry, but the supplied documents do not contain information about who developed the FAISS library or the year it was created.",
+    "sources": [
+      {
+        "citation": 1,
+        "source": "rag_fundamentals.txt",
+        "page": null,
+        "chunk_id": "rag_fundamentals.txt_None_1",
+        "score": 0.36823076009750366
+      },
+      {
+        "citation": 2,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_1",
+        "score": 0.3562977910041809
+      },
+      {
+        "citation": 3,
+        "source": "embeddings_and_faiss.txt",
+        "page": null,
+        "chunk_id": "embeddings_and_faiss.txt_None_0",
+        "score": 0.16329768300056458
+      },
+      {
+        "citation": 4,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_1",
+        "score": -0.023653829470276833
+      },
+      {
+        "citation": 5,
+        "source": "rag_evaluation.txt",
+        "page": null,
+        "chunk_id": "rag_evaluation.txt_None_0",
+        "score": 0.03003476932644844
+      }
+    ],
+    "latency_seconds": 7.7
+  }
+]

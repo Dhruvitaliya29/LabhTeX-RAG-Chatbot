@@ -1,0 +1,31 @@
+Evaluating a RAG System
+
+A RAG system should be evaluated using questions with known answers.
+
+Retrieval recall at K measures whether relevant chunks appear
+among the top K retrieved results.
+
+Precision at K measures the proportion of retrieved chunks
+that are relevant.
+
+Answer correctness measures whether the generated response
+accurately answers the user's question.
+
+Faithfulness measures whether the answer is supported
+by the retrieved document context.
+
+Citation accuracy measures whether displayed sources
+actually support the generated claims.
+
+Unsupported questions should be included in evaluation.
+The chatbot should acknowledge missing information instead
+of inventing answers.
+
+Other evaluation metrics include response latency,
+embedding generation time and retrieval time.
+
+Possible improvements include changing chunk size,
+adding keyword search, reranking and caching.
+
+Improvements should be evaluated using the same test questions
+before and after implementation.

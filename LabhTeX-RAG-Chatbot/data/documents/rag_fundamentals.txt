@@ -1,0 +1,23 @@
+Retrieval-Augmented Generation (RAG)
+
+RAG combines information retrieval with language model generation.
+It allows an LLM to access external knowledge before generating answers.
+
+RAG is useful for answering questions from private documents,
+technical manuals, research papers and frequently updated information.
+
+Document ingestion extracts text from PDF and TXT files.
+The extracted text is cleaned and divided into smaller chunks.
+Chunking improves retrieval by identifying relevant document sections.
+
+Embeddings are numerical vector representations of text.
+They capture semantic information and help compare text meaning.
+
+A vector database stores embeddings and performs similarity searches.
+FAISS is a library used for efficient vector similarity search.
+
+When a user asks a question, the question is converted into an embedding.
+The system retrieves relevant document chunks and passes them to an LLM.
+
+The LLM generates an answer using the retrieved context.
+If sufficient evidence is unavailable, the chatbot should acknowledge it.
