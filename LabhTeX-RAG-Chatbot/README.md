@@ -1,6 +1,10 @@
 
 A Retrieval-Augmented Generation (RAG) chatbot that answers questions from uploaded PDF and TXT documents. It combines semantic search, optional hybrid retrieval, and Groq-powered answer generation to provide context-grounded responses with source citations.
 
+## Live Demo
+
+Try the deployed application: [LabhTeX RAG Chatbot](https://labhtex-rag-chatbot-jjrdvgphl3abqlxtwqrrcj.streamlit.app/)
+
 ## Features
 
 - PDF and TXT document ingestion
