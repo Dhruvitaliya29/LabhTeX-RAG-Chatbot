@@ -2,7 +2,6 @@ from pathlib import Path
 import pymupdf as fitz
 import re
 
-
 SUPPORTED_EXTENSIONS = {".pdf", ".txt"}
 
 
@@ -34,6 +33,12 @@ def load_document(file_path: str) -> list[dict]:
                         "page": page_number
                     })
 
+        if not documents:
+            raise ValueError(
+                f"No selectable text found in PDF: {path.name}. "
+                "Scanned/image-only PDFs are not supported."
+            )
+
     elif path.suffix.lower() == ".txt":
         text = clean_text(path.read_text(encoding="utf-8"))
 
@@ -45,7 +50,7 @@ def load_document(file_path: str) -> list[dict]:
             })
 
     if not documents:
-        raise ValueError("No readable text found in document.")
+        raise ValueError(f"No readable text found in document: {path.name}")
 
     return documents
 

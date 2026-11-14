@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Generated vector database
+vector_store/
+
+# Private documents
+private_documents/
+data/documents/*.pdf
+
+# Local backups
+*.backup
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
