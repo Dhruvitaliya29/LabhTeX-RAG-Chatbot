@@ -2,6 +2,10 @@
 
 A document-based AI chatbot built using Retrieval-Augmented Generation (RAG). It allows users to upload PDF and TXT documents, retrieve relevant information, and receive context-grounded answers with source references.
 
+## Live Demo
+
+Try the deployed application: [LabhTeX RAG Chatbot](https://labhtex-rag-chatbot-jjrdvgphl3abqlxtwqrrcj.streamlit.app/)
+
 ## Features
 
 - Upload PDF and TXT documents.
