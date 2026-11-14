@@ -25,7 +25,6 @@ def load_document(file_path: str) -> list[dict]:
         with fitz.open(path) as pdf:
             for page_number, page in enumerate(pdf, start=1):
                 text = clean_text(page.get_text())
-
                 if text:
                     documents.append({
                         "text": text,
@@ -41,7 +40,6 @@ def load_document(file_path: str) -> list[dict]:
 
     elif path.suffix.lower() == ".txt":
         text = clean_text(path.read_text(encoding="utf-8"))
-
         if text:
             documents.append({
                 "text": text,
@@ -58,7 +56,6 @@ def load_document(file_path: str) -> list[dict]:
 def load_directory(directory: str) -> list[dict]:
     path = Path(directory)
     path.mkdir(parents=True, exist_ok=True)
-
     all_documents = []
 
     for file_path in sorted(path.iterdir()):
